@@ -2,6 +2,7 @@ package com.example.mobileassignment1;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +31,7 @@ public class detailedGPU_Activity extends AppCompatActivity {
     }
     private void buyGPU(){
         MainActivity.market.buyGPU(gpu);
+        Toast.makeText(this, "GPU Purchased!", Toast.LENGTH_SHORT).show();
         finish();
     }
     private void detailedGPU(){
